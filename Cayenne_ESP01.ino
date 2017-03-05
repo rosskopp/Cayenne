@@ -20,10 +20,10 @@ const int tmpPin = 2;
 //float light_level;
 
 // Cayenne authentication token. This should be obtained from the Cayenne Dashboard.
-char token[] = "scz0ntid1l";
+char token[] = "xxxx";
 // Your network name and password.
-char ssid[] = "RAK-BASE";
-char password[] = "rosskopp19751";
+char ssid[] = "xxxxx";
+char password[] = "xxxxx";
 
 
 
