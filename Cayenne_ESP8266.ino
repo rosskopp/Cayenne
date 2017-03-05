@@ -20,10 +20,10 @@ const int sensorPin= A0;
 float light_level;
 
 // Cayenne authentication token. This should be obtained from the Cayenne Dashboard.
-char token[] = "scz0ntid1l";
+char token[] = "CAYENNE-TOKEN";
 // Your network name and password.
-char ssid[] = "RAK-BASE";
-char password[] = "rosskopp19751";
+char ssid[] = "YOUR SSID";
+char password[] = "YOUR WPA2 KEY";
 
 
 
@@ -57,8 +57,6 @@ CAYENNE_OUT(V2)
 {
   // Send the command to get temperatures.
   sensors.requestTemperatures();
-  // This command writes the temperature in Celsius to the Virtual Pin.
-  //Cayenne.virtualWrite(V2, sensors.getTempCByIndex(0));
   // To send the temperature in Fahrenheit use the corresponding code below.
   Cayenne.virtualWrite(V2, sensors.getTempFByIndex(0));
 }
